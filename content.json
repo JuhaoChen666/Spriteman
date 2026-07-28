@@ -1,0 +1,155 @@
+{
+  "Format": "2.3.0",
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/Antigravity.BetelNutCrop/Objects",
+      "FromFile": "assets/objects.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/Antigravity.BetelNutCrop/Crops",
+      "FromFile": "assets/crops.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "Antigravity.BetelNutCrop_BetelNut": {
+          "Name": "Betel Nut",
+          "DisplayName": "{{i18n:betelnut.name}}",
+          "Description": "{{i18n:betelnut.description}}",
+          "Type": "Basic",
+          "Category": -79,
+          "Price": 120,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 0,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "BuffId": "Speed",
+              "Duration": 180,
+              "CustomAttributes": {
+                "Speed": 1
+              }
+            }
+          ]
+        },
+        "Antigravity.BetelNutCrop_Seeds": {
+          "Name": "Betel Nut Sapling",
+          "DisplayName": "{{i18n:betelnut_seeds.name}}",
+          "Description": "{{i18n:betelnut_seeds.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 40,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 1,
+          "Plantable": true
+        },
+        "Antigravity.BetelNutCrop_PremiumBetelNut": {
+          "Name": "Premium Betel Nut",
+          "DisplayName": "{{i18n:premium_betelnut.name}}",
+          "Description": "{{i18n:premium_betelnut.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 1440,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 2,
+          "Edibility": 90,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "BuffId": "Speed",
+              "Duration": 180,
+              "CustomAttributes": {
+                "Speed": 6
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "Antigravity.BetelNutCrop_Seeds": {
+          "Seasons": [
+            "Spring",
+            "Summer",
+            "Fall",
+            "Winter"
+          ],
+          "DaysInPhase": [
+            3,
+            4,
+            4,
+            4,
+            0
+          ],
+          "HarvestMethod": "Grab",
+          "HarvestItemId": "Antigravity.BetelNutCrop_BetelNut",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 2,
+          "HarvestMaxIncreasePerFarmingLevel": 0.1,
+          "ExtraHarvestChance": 0.1,
+          "RegrowDays": 3,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Crops",
+          "SpriteIndex": 0,
+          "IsPaddyCrop": false
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Entries": {
+        "Antigravity.BetelNutCrop_Seeds": {
+          "Id": "Antigravity.BetelNutCrop_Seeds",
+          "ItemId": "(O)Antigravity.BetelNutCrop_Seeds",
+          "Price": 80,
+          "AvailableStock": -1
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)Dehydrator",
+        "OutputRules"
+      ],
+      "Entries": {
+        "Antigravity.BetelNutCrop_Dehydrator_PremiumBetelNut": {
+          "Id": "Antigravity.BetelNutCrop_Dehydrator_PremiumBetelNut",
+          "Triggers": [
+            {
+              "Id": "ItemPlacedInMachine",
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O)Antigravity.BetelNutCrop_BetelNut",
+              "RequiredCount": 5
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "Antigravity.BetelNutCrop_PremiumBetelNut_Output",
+              "ItemId": "(O)Antigravity.BetelNutCrop_PremiumBetelNut"
+            }
+          ],
+          "DaysUntilReady": 5
+        }
+      },
+      "MoveEntries": [
+        {
+          "ID": "Antigravity.BetelNutCrop_Dehydrator_PremiumBetelNut",
+          "ToPosition": "Top"
+        }
+      ]
+    }
+  ]
+}
