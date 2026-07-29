@@ -12,6 +12,11 @@
       "FromFile": "assets/crops.png"
     },
     {
+      "Action": "Load",
+      "Target": "Mods/Antigravity.BetelNutCrop/TobaccoCrops",
+      "FromFile": "assets/tobacco_crops.png"
+    },
+    {
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
@@ -67,6 +72,41 @@
               }
             }
           ]
+        },
+        "Antigravity.BetelNutCrop_TobaccoSeeds": {
+          "Name": "Tobacco Seeds",
+          "DisplayName": "{{i18n:tobacco_seeds.name}}",
+          "Description": "{{i18n:tobacco_seeds.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 40,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 3,
+          "Plantable": true
+        },
+        "Antigravity.BetelNutCrop_TobaccoLeaf": {
+          "Name": "Fresh Tobacco",
+          "DisplayName": "{{i18n:tobacco.name}}",
+          "Description": "{{i18n:tobacco.description}}",
+          "Type": "Basic",
+          "Category": -79,
+          "Price": 50,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 4,
+          "Edibility": -300,
+          "IsDrink": false
+        },
+        "Antigravity.BetelNutCrop_DriedTobacco": {
+          "Name": "Dried Tobacco",
+          "DisplayName": "{{i18n:dried_tobacco.name}}",
+          "Description": "{{i18n:dried_tobacco.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 200,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 5,
+          "Edibility": -300,
+          "IsDrink": false
         }
       }
     },
@@ -98,6 +138,29 @@
           "Texture": "Mods/Antigravity.BetelNutCrop/Crops",
           "SpriteIndex": 0,
           "IsPaddyCrop": false
+        },
+        "Antigravity.BetelNutCrop_TobaccoSeeds": {
+          "Seasons": [
+            "Spring",
+            "Summer",
+            "Fall"
+          ],
+          "DaysInPhase": [
+            3,
+            4,
+            4,
+            0
+          ],
+          "HarvestMethod": "Scythe",
+          "HarvestItemId": "Antigravity.BetelNutCrop_TobaccoLeaf",
+          "HarvestMinStack": 2,
+          "HarvestMaxStack": 4,
+          "HarvestMaxIncreasePerFarmingLevel": 0,
+          "ExtraHarvestChance": 0,
+          "RegrowDays": -1,
+          "Texture": "Mods/Antigravity.BetelNutCrop/TobaccoCrops",
+          "SpriteIndex": 0,
+          "IsPaddyCrop": false
         }
       }
     },
@@ -112,6 +175,12 @@
         "Antigravity.BetelNutCrop_Seeds": {
           "Id": "Antigravity.BetelNutCrop_Seeds",
           "ItemId": "(O)Antigravity.BetelNutCrop_Seeds",
+          "Price": 80,
+          "AvailableStock": -1
+        },
+        "Antigravity.BetelNutCrop_TobaccoSeeds": {
+          "Id": "Antigravity.BetelNutCrop_TobaccoSeeds",
+          "ItemId": "(O)Antigravity.BetelNutCrop_TobaccoSeeds",
           "Price": 80,
           "AvailableStock": -1
         }
@@ -142,11 +211,33 @@
             }
           ],
           "DaysUntilReady": 5
+        },
+        "Antigravity.BetelNutCrop_Dehydrator_DriedTobacco": {
+          "Id": "Antigravity.BetelNutCrop_Dehydrator_DriedTobacco",
+          "Triggers": [
+            {
+              "Id": "ItemPlacedInMachine",
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O)Antigravity.BetelNutCrop_TobaccoLeaf",
+              "RequiredCount": 3
+            }
+          ],
+          "OutputItem": [
+            {
+              "Id": "Antigravity.BetelNutCrop_DriedTobacco_Output",
+              "ItemId": "(O)Antigravity.BetelNutCrop_DriedTobacco"
+            }
+          ],
+          "DaysUntilReady": 2
         }
       },
       "MoveEntries": [
         {
           "ID": "Antigravity.BetelNutCrop_Dehydrator_PremiumBetelNut",
+          "ToPosition": "Top"
+        },
+        {
+          "ID": "Antigravity.BetelNutCrop_Dehydrator_DriedTobacco",
           "ToPosition": "Top"
         }
       ]

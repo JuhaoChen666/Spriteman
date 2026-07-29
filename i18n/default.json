@@ -4,5 +4,11 @@
   "betelnut_seeds.name": "Betel Nut Sapling",
   "betelnut_seeds.description": "Plant in summer or autumn. Takes 8 days to mature, and continues to produce betel nuts after harvest.",
   "premium_betelnut.name": "Premium Betel Nut",
-  "premium_betelnut.description": "Carefully dried and packaged premium betel nut. Extremely strong and invigorating when consumed."
+  "premium_betelnut.description": "Carefully dried and packaged premium betel nut. Extremely strong and invigorating when consumed.",
+  "tobacco.name": "Fresh Tobacco",
+  "tobacco.description": "Freshly harvested tobacco leaves with a distinctive aroma.",
+  "tobacco_seeds.name": "Tobacco Seeds",
+  "tobacco_seeds.description": "Plant in spring, summer, or fall. Takes 11 days to mature and must be harvested with a scythe.",
+  "dried_tobacco.name": "Dried Tobacco",
+  "dried_tobacco.description": "An artisan good made by curing three portions of fresh tobacco in a dehydrator."
 }
