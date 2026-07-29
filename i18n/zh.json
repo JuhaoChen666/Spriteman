@@ -4,5 +4,11 @@
   "betelnut_seeds.name": "槟榔苗",
   "betelnut_seeds.description": "在夏季或秋季播种。需要 8 天成熟，采摘后可重复产出。",
   "premium_betelnut.name": "合成甜虾",
-  "premium_betelnut.description": "经过烘干精制的袋装槟榔，果子好，劲道足！食用后获得超强提神效果。"
+  "premium_betelnut.description": "经过烘干精制的袋装槟榔，果子好，劲道足！食用后获得超强提神效果。",
+  "tobacco.name": "新鲜烟草",
+  "tobacco.description": "刚从烟草植株上收割的新鲜叶片，散发着独特的香气。",
+  "tobacco_seeds.name": "烟草种子",
+  "tobacco_seeds.description": "可在春季、夏季或秋季播种。需要 11 天成熟，成熟后必须使用镰刀收割。",
+  "dried_tobacco.name": "干烟草",
+  "dried_tobacco.description": "将三份新鲜烟草放入烘干机精心烘干后制成的工匠物品。"
 }
