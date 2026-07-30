@@ -10,5 +10,12 @@
   "tobacco_seeds.name": "烟草种子",
   "tobacco_seeds.description": "可在春季、夏季或秋季播种。需要 11 天成熟，成熟后必须使用镰刀收割。",
   "dried_tobacco.name": "干烟草",
-  "dried_tobacco.description": "将三份新鲜烟草放入烘干机精心烘干后制成的工匠物品。"
+  "dried_tobacco.description": "将三份新鲜烟草放入烘干机精心烘干后制成的工匠物品。",
+  "paper.name": "纸张",
+  "paper.description": "用纤维和树液压制成的薄纸，可用于卷制卷烟。",
+  "cigarette.name": "卷烟",
+  "cigarette.description": "用纸张和干烟草手工卷制的一支卷烟。",
+  "paper_press.name": "造纸机",
+  "paper_press.description": "将纤维和树液压制成纸张。",
+  "paper_press.missing_sap": "需要 1 份树液才能把纤维压制成纸张。"
 }
