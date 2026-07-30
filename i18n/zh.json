@@ -14,7 +14,9 @@
   "paper.name": "纸张",
   "paper.description": "用纤维和树液压制成的薄纸，可用于卷制卷烟。",
   "cigarette.name": "卷烟",
-  "cigarette.description": "用纸张和干烟草手工卷制的一支卷烟。",
+  "cigarette.description": "吸食后消耗 5 点生命并恢复 50 点精力，同时获得持续 150 秒的挖矿 +2 与速度 +2。",
+  "cigarette.buff.name": "尼古丁刺激",
+  "cigarette.buff.description": "挖矿 +2，速度 +2。",
   "paper_press.name": "造纸机",
   "paper_press.description": "将纤维和树液压制成纸张。",
   "paper_press.missing_sap": "需要 1 份树液才能把纤维压制成纸张。"

@@ -141,6 +141,23 @@
     },
     {
       "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "Antigravity.BetelNutCrop_Cigarette": {
+          "DisplayName": "{{i18n:cigarette.buff.name}}",
+          "Description": "{{i18n:cigarette.buff.description}}",
+          "Duration": 150000,
+          "IconTexture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "IconSpriteIndex": 7,
+          "Effects": {
+            "MiningLevel": 2,
+            "Speed": 2
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
       "Target": "Data/BigCraftables",
       "Entries": {
         "Antigravity.BetelNutCrop_PaperPress": {

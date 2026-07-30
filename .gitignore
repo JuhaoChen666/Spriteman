@@ -8,6 +8,8 @@
 .planning/
 .vs/
 .idea/
+bin/
+obj/
 *.log
 .DS_Store
 Thumbs.db
