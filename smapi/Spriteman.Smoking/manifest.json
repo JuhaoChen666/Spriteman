@@ -1,0 +1,15 @@
+{
+  "Name": "Spriteman Smoking",
+  "Author": "Antigravity",
+  "Version": "1.0.0",
+  "Description": "Adds the custom smoking action and cigarette effects for Spriteman.",
+  "UniqueID": "Antigravity.SpritemanSmoking",
+  "EntryDll": "Spriteman.Smoking.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    {
+      "UniqueID": "Antigravity.BetelNutCrop",
+      "IsRequired": true
+    }
+  ]
+}

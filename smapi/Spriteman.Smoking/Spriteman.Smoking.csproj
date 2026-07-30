@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>Spriteman.Smoking</AssemblyName>
+    <RootNamespace>Spriteman.Smoking</RootNamespace>
+    <StardewValleyPath Condition="'$(StardewValleyPath)' == ''">E:\Steam\steamapps\common\Stardew Valley</StardewValleyPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="StardewModdingAPI" HintPath="$(StardewValleyPath)\StardewModdingAPI.dll" Private="false" />
+    <Reference Include="Stardew Valley" HintPath="$(StardewValleyPath)\Stardew Valley.dll" Private="false" />
+    <Reference Include="StardewValley.GameData" HintPath="$(StardewValleyPath)\StardewValley.GameData.dll" Private="false" />
+    <Reference Include="MonoGame.Framework" HintPath="$(StardewValleyPath)\MonoGame.Framework.dll" Private="false" />
+  </ItemGroup>
+</Project>

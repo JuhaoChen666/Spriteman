@@ -17,6 +17,11 @@
       "FromFile": "assets/tobacco_crops.png"
     },
     {
+      "Action": "Load",
+      "Target": "Mods/Antigravity.BetelNutCrop/Machines",
+      "FromFile": "assets/machines.png"
+    },
+    {
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
@@ -107,7 +112,74 @@
           "SpriteIndex": 5,
           "Edibility": -300,
           "IsDrink": false
+        },
+        "Antigravity.BetelNutCrop_Paper": {
+          "Name": "Paper",
+          "DisplayName": "{{i18n:paper.name}}",
+          "Description": "{{i18n:paper.description}}",
+          "Type": "Basic",
+          "Category": 0,
+          "Price": 20,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 6,
+          "Edibility": -300,
+          "IsDrink": false
+        },
+        "Antigravity.BetelNutCrop_Cigarette": {
+          "Name": "Cigarette",
+          "DisplayName": "{{i18n:cigarette.name}}",
+          "Description": "{{i18n:cigarette.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 250,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 7,
+          "Edibility": -300,
+          "IsDrink": false
         }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "Antigravity.BetelNutCrop_Cigarette": {
+          "DisplayName": "{{i18n:cigarette.buff.name}}",
+          "Description": "{{i18n:cigarette.buff.description}}",
+          "Duration": 150000,
+          "IconTexture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "IconSpriteIndex": 7,
+          "Effects": {
+            "MiningLevel": 2,
+            "Speed": 2
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "Antigravity.BetelNutCrop_PaperPress": {
+          "Name": "Paper Press",
+          "DisplayName": "{{i18n:paper_press.name}}",
+          "Description": "{{i18n:paper_press.description}}",
+          "Price": 1000,
+          "Fragility": 0,
+          "CanBePlacedOutdoors": true,
+          "CanBePlacedIndoors": true,
+          "IsLamp": false,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Machines",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "Antigravity.BetelNutCrop_PaperPress": "388 50 335 2 771 20/Home/Antigravity.BetelNutCrop_PaperPress 1/true/default/{{i18n:paper_press.name}}",
+        "Antigravity.BetelNutCrop_Cigarette": "Antigravity.BetelNutCrop_Paper 1 Antigravity.BetelNutCrop_DriedTobacco 1/Home/Antigravity.BetelNutCrop_Cigarette 1/false/default/{{i18n:cigarette.name}}"
       }
     },
     {
@@ -241,6 +313,43 @@
           "ToPosition": "Top"
         }
       ]
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC)Antigravity.BetelNutCrop_PaperPress": {
+          "AdditionalConsumedItems": [
+            {
+              "ItemId": "(O)92",
+              "RequiredCount": 1,
+              "InvalidCountMessage": "{{i18n:paper_press.missing_sap}}"
+            }
+          ],
+          "OutputRules": [
+            {
+              "Id": "Antigravity.BetelNutCrop_PaperPress_Paper",
+              "Triggers": [
+                {
+                  "Id": "ItemPlacedInMachine",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)771",
+                  "RequiredCount": 5
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "Antigravity.BetelNutCrop_Paper_Output",
+                  "ItemId": "(O)Antigravity.BetelNutCrop_Paper",
+                  "MinStack": 5,
+                  "MaxStack": 5
+                }
+              ],
+              "DaysUntilReady": 1
+            }
+          ]
+        }
+      }
     }
   ]
 }

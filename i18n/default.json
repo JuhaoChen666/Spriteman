@@ -10,5 +10,14 @@
   "tobacco_seeds.name": "Tobacco Seeds",
   "tobacco_seeds.description": "Plant in spring, summer, or fall. Takes 11 days to mature and must be harvested with a scythe.",
   "dried_tobacco.name": "Dried Tobacco",
-  "dried_tobacco.description": "An artisan good made by curing three portions of fresh tobacco in a dehydrator."
+  "dried_tobacco.description": "An artisan good made by curing three portions of fresh tobacco in a dehydrator.",
+  "paper.name": "Paper",
+  "paper.description": "A thin sheet pressed from fiber and tree sap. Useful for rolling cigarettes.",
+  "cigarette.name": "Cigarette",
+  "cigarette.description": "Smoke to restore 50 Energy at the cost of 5 Health. Grants +2 Mining and +2 Speed for 150 seconds.",
+  "cigarette.buff.name": "Nicotine Rush",
+  "cigarette.buff.description": "+2 Mining and +2 Speed.",
+  "paper_press.name": "Paper Press",
+  "paper_press.description": "Presses fiber and tree sap into sheets of paper.",
+  "paper_press.missing_sap": "You need 1 Sap to press the fiber into paper."
 }
