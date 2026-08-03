@@ -1,8 +1,8 @@
 {
   "Name": "[CP] Spriteman",
   "Author": "Antigravity",
-  "Version": "1.1.0",
-  "Description": "Adds custom crops and artisan goods to Stardew Valley 1.6+",
+  "Version": "1.3.0",
+  "Description": "Adds custom crops, artisan goods, and a modern vape crafting line to Stardew Valley 1.6+",
   "UniqueID": "Antigravity.BetelNutCrop",
   "MinimumApiVersion": "4.0.0",
   "ContentPackFor": {

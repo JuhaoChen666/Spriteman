@@ -17,6 +17,12 @@
   "cigarette.description": "Smoke to restore 50 Energy at the cost of 5 Health. Grants +2 Mining and +2 Speed for 150 seconds.",
   "cigarette.buff.name": "Nicotine Rush",
   "cigarette.buff.description": "+2 Mining and +2 Speed.",
+  "vape_juice_pod.name": "Vape Juice Pod",
+  "vape_juice_pod.description": "A sealed pod filled with tobacco-infused e-liquid and ready for a battery-powered vape.",
+  "e_cigarette.name": "E-Cigarette",
+  "e_cigarette.description": "A reusable vape assembled from a filled pod and a charged battery pack. Load a pod to get 20 uses.",
+  "e_cigarette.buff.name": "Light Vape Rush",
+  "e_cigarette.buff.description": "+1 Mining and +1 Speed.",
   "paper_press.name": "Paper Press",
   "paper_press.description": "Presses fiber and tree sap into sheets of paper.",
   "paper_press.missing_sap": "You need 1 Sap to press the fiber into paper."

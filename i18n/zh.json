@@ -17,6 +17,12 @@
   "cigarette.description": "吸食后消耗 5 点生命并恢复 50 点精力，同时获得持续 150 秒的挖矿 +2 与速度 +2。",
   "cigarette.buff.name": "尼古丁刺激",
   "cigarette.buff.description": "挖矿 +2，速度 +2。",
+  "vape_juice_pod.name": "烟油胶囊",
+  "vape_juice_pod.description": "装满烟草风味电子烟油的密封胶囊，可装入电池驱动的电子烟。",
+  "e_cigarette.name": "电子烟",
+  "e_cigarette.description": "用装好的烟油胶囊和充满电的电池组组装而成的可重复使用电子烟。装入烟弹后可吸食 20 次。",
+  "e_cigarette.buff.name": "轻度电子烟刺激",
+  "e_cigarette.buff.description": "挖矿 +1，速度 +1。",
   "paper_press.name": "造纸机",
   "paper_press.description": "将纤维和树液压制成纸张。",
   "paper_press.missing_sap": "需要 1 份树液才能把纤维压制成纸张。"

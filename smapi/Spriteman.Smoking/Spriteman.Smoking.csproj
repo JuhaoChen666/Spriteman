@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="i18n\**" CopyToOutputDirectory="PreserveNewest" />
     <Reference Include="StardewModdingAPI" HintPath="$(StardewValleyPath)\StardewModdingAPI.dll" Private="false" />
     <Reference Include="Stardew Valley" HintPath="$(StardewValleyPath)\Stardew Valley.dll" Private="false" />
     <Reference Include="StardewValley.GameData" HintPath="$(StardewValleyPath)\StardewValley.GameData.dll" Private="false" />

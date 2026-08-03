@@ -2,21 +2,21 @@
 
 # Spriteman
 
-**A Stardew Valley 1.6+ mod for players who want new crops, artisan processing, paper making, cigarette crafting, and a custom smoking action.**
+**A Stardew Valley 1.6+ mod for players who want new crops, artisan processing, paper making, cigarette crafting, a modern vape crafting line, and a custom smoking action.**
 
 <img src="assets/crops.png" width="512" alt="Betel nut crop growth stages" />
 
-<img src="assets/objects.png" width="512" alt="Spriteman seeds, produce, artisan goods, paper, and cigarette sprites" />
+<img src="assets/objects.png" width="512" alt="Spriteman seeds, produce, artisan goods, paper, cigarette, and vape sprites" />
 
-![Content Pack](https://img.shields.io/badge/content_pack-v1.1.0-4f8a4c)
-![Smoking Mod](https://img.shields.io/badge/smoking_mod-v1.0.0-b55d4c)
+![Content Pack](https://img.shields.io/badge/content_pack-v1.3.0-4f8a4c)
+![Smoking Mod](https://img.shields.io/badge/smoking_mod-v1.1.0-b55d4c)
 ![Stardew Valley](https://img.shields.io/badge/Stardew_Valley-1.6%2B-6b8e23)
 ![SMAPI](https://img.shields.io/badge/SMAPI-4.0.0%2B-d97b29)
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue)
 
 </div>
 
-Spriteman adds a complete farm-to-craft loop: grow betel nut and tobacco, use a Dehydrator to make premium goods, press Fiber and Sap into Paper, roll Cigarettes, and smoke them through a dedicated SMAPI-powered action.
+Spriteman adds a complete farm-to-craft loop: grow betel nut and tobacco, use a Dehydrator to make premium goods, press Fiber and Sap into Paper, roll Cigarettes, assemble Vape Juice Pods and E-Cigarettes, and smoke Cigarettes through a dedicated SMAPI-powered action.
 
 ## Features
 
@@ -24,7 +24,8 @@ Spriteman adds a complete farm-to-craft loop: grow betel nut and tobacco, use a 
 - Dehydrator recipes for Premium Betel Nut and Dried Tobacco.
 - A craftable Paper Press that turns Fiber and Sap into Paper.
 - A Paper + Dried Tobacco cigarette recipe.
-- A custom smoking animation with sound, smoke puffs, energy recovery, a health cost, and a temporary buff.
+- Vape Juice Pod and E-Cigarette recipes that use native Truffle Oil and Battery Packs.
+- A custom smoking animation with sound, smoke puffs, energy recovery, a health cost, and a temporary buff for Cigarettes and E-Cigarettes.
 - English and Simplified Chinese localization files.
 
 ## Requirements
@@ -101,8 +102,10 @@ Mods/
 | --- | --- | --- |
 | Paper Press | 50 Wood (`388`) + 2 Iron Bars (`335`) + 20 Fiber (`771`) | 1 Paper Press |
 | Cigarette | 1 Paper + 1 Dried Tobacco | 1 Cigarette |
+| Vape Juice Pod | 1 Fresh Tobacco + 1 Truffle Oil (`432`) | 1 Vape Juice Pod |
+| E-Cigarette | 1 Vape Juice Pod + 1 Battery Pack (`787`) | 1 E-Cigarette |
 
-Both crafting recipes are registered as default recipes by the content pack.
+All crafting recipes in the table are registered as default recipes by the content pack.
 
 ## Items and Effects
 
@@ -114,6 +117,8 @@ Both crafting recipes are registered as default recipes by the content pack.
 | Dried Tobacco | `200g` | Not edible; used to craft Cigarettes |
 | Paper | `20g` | Not edible; used to craft Cigarettes |
 | Cigarette | `250g` | Consumed by the custom smoking action |
+| Vape Juice Pod | `350g` | Not edible; used to assemble E-Cigarettes |
+| E-Cigarette | `650g` | Not edible; load a Vape Juice Pod for 20 uses |
 
 ### Smoking a Cigarette
 
@@ -125,6 +130,10 @@ With a Cigarette selected, press the normal action button while the player is fr
 4. Restores `50 Energy` without exceeding maximum stamina.
 5. Applies **Nicotine Rush** for `150 seconds`, granting `+2 Mining` and `+2 Speed`.
 
+### Vaping an E-Cigarette
+
+With an E-Cigarette selected, press the normal action button while the player is free. If the rod has no loaded pod, the mod consumes one Vape Juice Pod from the inventory and stores `20` uses in the item's persistent mod data. Press the action button again to vape. Each use replays the same animation and smoke puffs as a Cigarette, costs `2 Health`, restores `50 Energy`, and applies **Light Vape Rush** for `150 seconds`, granting `+1 Mining` and `+1 Speed`. The E-Cigarette rod remains in the inventory when the pod reaches zero uses and can be refilled with another pod.
+
 ## Project Structure
 
 ```text
@@ -132,7 +141,8 @@ Spriteman/
 |-- assets/                         # Crop, object, tobacco, and machine sprite sheets
 |-- i18n/                           # English and Simplified Chinese text
 |-- smapi/Spriteman.Smoking/
-|   |-- ModEntry.cs                 # Custom smoking interaction and effects
+|   |-- ModEntry.cs                 # Cigarette and refillable E-Cigarette interactions
+|   |-- i18n/                       # SMAPI HUD messages for loading and using pods
 |   |-- Spriteman.Smoking.csproj    # .NET 6 build configuration and game references
 |   `-- manifest.json               # SMAPI module metadata and dependency declaration
 |-- content.json                    # Content Patcher objects, crops, shops, recipes, and machines
@@ -154,7 +164,9 @@ There is currently no automated test project or checked-in CI workflow. Changes 
 - Check that both seed types appear in the Seed Shop at `80g`.
 - Verify crop seasons, growth, harvest method, yield, and betel regrowth.
 - Run each Dehydrator and Paper Press recipe to completion.
-- Craft a Cigarette, use the action button, and verify item consumption, animation, health, energy, and buff behavior.
+- Craft a Cigarette, Vape Juice Pod, and E-Cigarette, verifying native Truffle Oil and Battery Pack inputs are consumed correctly.
+- Use a Cigarette with the action button and verify item consumption, animation, health, energy, and buff behavior.
+- Select an empty E-Cigarette, press the action button to load a pod, then press it again to vape; verify the pod starts at 20 uses, decreases once per animation, and the rod remains after the twentieth use.
 
 When changing player-facing content, keep `i18n/default.json` and `i18n/zh.json` aligned with the values in `content.json`.
 
