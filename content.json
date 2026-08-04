@@ -136,6 +136,31 @@
           "SpriteIndex": 7,
           "Edibility": -300,
           "IsDrink": false
+        },
+        "Antigravity.BetelNutCrop_VapeJuicePod": {
+          "Name": "Vape Juice Pod",
+          "DisplayName": "{{i18n:vape_juice_pod.name}}",
+          "Description": "{{i18n:vape_juice_pod.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 350,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 8,
+          "Edibility": -300,
+          "IsDrink": false
+        },
+        "Antigravity.BetelNutCrop_ECigarette": {
+          "Name": "E-Cigarette",
+          "DisplayName": "{{i18n:e_cigarette.name}}",
+          "Description": "{{i18n:e_cigarette.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 650,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 9,
+          "Edibility": -300,
+          "IsDrink": false
+        }
         }
       }
     },
@@ -153,6 +178,18 @@
             "MiningLevel": 2,
             "Speed": 2
           }
+        },
+        "Antigravity.BetelNutCrop_ECigarette": {
+          "DisplayName": "{{i18n:e_cigarette.buff.name}}",
+          "Description": "{{i18n:e_cigarette.buff.description}}",
+          "Duration": 150000,
+          "IconTexture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "IconSpriteIndex": 9,
+          "Effects": {
+            "MiningLevel": 1,
+            "Speed": 1
+          }
+        }
         }
       }
     },
@@ -179,7 +216,9 @@
       "Target": "Data/CraftingRecipes",
       "Entries": {
         "Antigravity.BetelNutCrop_PaperPress": "388 50 335 2 771 20/Home/Antigravity.BetelNutCrop_PaperPress 1/true/default/{{i18n:paper_press.name}}",
-        "Antigravity.BetelNutCrop_Cigarette": "Antigravity.BetelNutCrop_Paper 1 Antigravity.BetelNutCrop_DriedTobacco 1/Home/Antigravity.BetelNutCrop_Cigarette 1/false/default/{{i18n:cigarette.name}}"
+        "Antigravity.BetelNutCrop_Cigarette": "Antigravity.BetelNutCrop_Paper 1 Antigravity.BetelNutCrop_DriedTobacco 1/Home/Antigravity.BetelNutCrop_Cigarette 1/false/default/{{i18n:cigarette.name}}",
+        "Antigravity.BetelNutCrop_VapeJuicePod": "Antigravity.BetelNutCrop_TobaccoLeaf 1 432 1/Home/Antigravity.BetelNutCrop_VapeJuicePod 1/false/default/{{i18n:vape_juice_pod.name}}",
+        "Antigravity.BetelNutCrop_ECigarette": "Antigravity.BetelNutCrop_VapeJuicePod 1 787 1/Home/Antigravity.BetelNutCrop_ECigarette 1/false/default/{{i18n:e_cigarette.name}}"
       }
     },
     {

@@ -1,0 +1,6 @@
+{
+  "vape.loaded": "Vape pod loaded. Uses remaining: {{uses}}.",
+  "vape.empty": "Load a Vape Juice Pod before vaping.",
+  "vape.uses_remaining": "Vape use complete. Uses remaining: {{uses}}.",
+  "vape.empty_after_use": "Vape pod is empty. Load a new pod."
+}
