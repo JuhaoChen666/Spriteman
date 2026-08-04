@@ -1,8 +1,8 @@
 {
   "Name": "Spriteman Smoking",
   "Author": "Antigravity",
-  "Version": "1.1.0",
-  "Description": "Adds cigarette smoking and a reusable 20-use vape with refillable pods for Spriteman.",
+  "Version": "1.2.1",
+  "Description": "Adds cigarette smoking and a non-stackable reusable vape with base and fruit-flavored refill pods for Spriteman.",
   "UniqueID": "Antigravity.SpritemanSmoking",
   "EntryDll": "Spriteman.Smoking.dll",
   "MinimumApiVersion": "4.0.0",

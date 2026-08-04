@@ -15,5 +15,6 @@
     <Reference Include="Stardew Valley" HintPath="$(StardewValleyPath)\Stardew Valley.dll" Private="false" />
     <Reference Include="StardewValley.GameData" HintPath="$(StardewValleyPath)\StardewValley.GameData.dll" Private="false" />
     <Reference Include="MonoGame.Framework" HintPath="$(StardewValleyPath)\MonoGame.Framework.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(StardewValleyPath)\smapi-internal\0Harmony.dll" Private="false" />
   </ItemGroup>
 </Project>

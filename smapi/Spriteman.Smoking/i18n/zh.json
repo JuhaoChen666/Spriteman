@@ -1,5 +1,5 @@
 {
-  "vape.loaded": "烟弹已装入，剩余次数：{{uses}}。",
+  "vape.loaded": "已装入{{pod}}，剩余次数：{{uses}}。",
   "vape.empty": "请先装入烟油胶囊再吸食电子烟。",
   "vape.uses_remaining": "吸食完成，烟弹剩余次数：{{uses}}。",
   "vape.empty_after_use": "烟弹已用完，请装入新的烟弹。"
