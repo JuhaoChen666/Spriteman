@@ -160,7 +160,54 @@
           "SpriteIndex": 9,
           "Edibility": -300,
           "IsDrink": false
-        }
+        },
+        "Antigravity.BetelNutCrop_AppleVapeJuicePod": {
+          "Name": "Apple Vape Juice Pod",
+          "DisplayName": "{{i18n:apple_vape_juice_pod.name}}",
+          "Description": "{{i18n:apple_vape_juice_pod.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 450,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 10,
+          "Edibility": -300,
+          "IsDrink": false
+        },
+        "Antigravity.BetelNutCrop_BlueberryVapeJuicePod": {
+          "Name": "Blueberry Vape Juice Pod",
+          "DisplayName": "{{i18n:blueberry_vape_juice_pod.name}}",
+          "Description": "{{i18n:blueberry_vape_juice_pod.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 400,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 11,
+          "Edibility": -300,
+          "IsDrink": false
+        },
+        "Antigravity.BetelNutCrop_MelonVapeJuicePod": {
+          "Name": "Melon Vape Juice Pod",
+          "DisplayName": "{{i18n:melon_vape_juice_pod.name}}",
+          "Description": "{{i18n:melon_vape_juice_pod.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 600,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 12,
+          "Edibility": -300,
+          "IsDrink": false
+        },
+        "Antigravity.BetelNutCrop_StrawberryVapeJuicePod": {
+          "Name": "Strawberry Vape Juice Pod",
+          "DisplayName": "{{i18n:strawberry_vape_juice_pod.name}}",
+          "Description": "{{i18n:strawberry_vape_juice_pod.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 470,
+          "Texture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "SpriteIndex": 13,
+          "Edibility": -300,
+          "IsDrink": false
         }
       }
     },
@@ -189,7 +236,50 @@
             "MiningLevel": 1,
             "Speed": 1
           }
-        }
+        },
+        "Antigravity.BetelNutCrop_AppleVape": {
+          "DisplayName": "{{i18n:apple_vape.buff.name}}",
+          "Description": "{{i18n:apple_vape.buff.description}}",
+          "Duration": 150000,
+          "IconTexture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "IconSpriteIndex": 10,
+          "Effects": {
+            "FarmingLevel": 1,
+            "Speed": 1
+          }
+        },
+        "Antigravity.BetelNutCrop_BlueberryVape": {
+          "DisplayName": "{{i18n:blueberry_vape.buff.name}}",
+          "Description": "{{i18n:blueberry_vape.buff.description}}",
+          "Duration": 150000,
+          "IconTexture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "IconSpriteIndex": 11,
+          "Effects": {
+            "FishingLevel": 1,
+            "Speed": 1
+          }
+        },
+        "Antigravity.BetelNutCrop_MelonVape": {
+          "DisplayName": "{{i18n:melon_vape.buff.name}}",
+          "Description": "{{i18n:melon_vape.buff.description}}",
+          "Duration": 150000,
+          "IconTexture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "IconSpriteIndex": 12,
+          "Effects": {
+            "Defense": 1,
+            "Speed": 1
+          }
+        },
+        "Antigravity.BetelNutCrop_StrawberryVape": {
+          "DisplayName": "{{i18n:strawberry_vape.buff.name}}",
+          "Description": "{{i18n:strawberry_vape.buff.description}}",
+          "Duration": 150000,
+          "IconTexture": "Mods/Antigravity.BetelNutCrop/Objects",
+          "IconSpriteIndex": 13,
+          "Effects": {
+            "LuckLevel": 1,
+            "Speed": 1
+          }
         }
       }
     },
@@ -218,7 +308,11 @@
         "Antigravity.BetelNutCrop_PaperPress": "388 50 335 2 771 20/Home/Antigravity.BetelNutCrop_PaperPress 1/true/default/{{i18n:paper_press.name}}",
         "Antigravity.BetelNutCrop_Cigarette": "Antigravity.BetelNutCrop_Paper 1 Antigravity.BetelNutCrop_DriedTobacco 1/Home/Antigravity.BetelNutCrop_Cigarette 1/false/default/{{i18n:cigarette.name}}",
         "Antigravity.BetelNutCrop_VapeJuicePod": "Antigravity.BetelNutCrop_TobaccoLeaf 1 432 1/Home/Antigravity.BetelNutCrop_VapeJuicePod 1/false/default/{{i18n:vape_juice_pod.name}}",
-        "Antigravity.BetelNutCrop_ECigarette": "Antigravity.BetelNutCrop_VapeJuicePod 1 787 1/Home/Antigravity.BetelNutCrop_ECigarette 1/false/default/{{i18n:e_cigarette.name}}"
+        "Antigravity.BetelNutCrop_ECigarette": "Antigravity.BetelNutCrop_VapeJuicePod 1 787 1/Home/Antigravity.BetelNutCrop_ECigarette 1/false/default/{{i18n:e_cigarette.name}}",
+        "Antigravity.BetelNutCrop_AppleVapeJuicePod": "Antigravity.BetelNutCrop_VapeJuicePod 1 613 1/Home/Antigravity.BetelNutCrop_AppleVapeJuicePod 1/false/default/{{i18n:apple_vape_juice_pod.name}}",
+        "Antigravity.BetelNutCrop_BlueberryVapeJuicePod": "Antigravity.BetelNutCrop_VapeJuicePod 1 258 1/Home/Antigravity.BetelNutCrop_BlueberryVapeJuicePod 1/false/default/{{i18n:blueberry_vape_juice_pod.name}}",
+        "Antigravity.BetelNutCrop_MelonVapeJuicePod": "Antigravity.BetelNutCrop_VapeJuicePod 1 254 1/Home/Antigravity.BetelNutCrop_MelonVapeJuicePod 1/false/default/{{i18n:melon_vape_juice_pod.name}}",
+        "Antigravity.BetelNutCrop_StrawberryVapeJuicePod": "Antigravity.BetelNutCrop_VapeJuicePod 1 400 1/Home/Antigravity.BetelNutCrop_StrawberryVapeJuicePod 1/false/default/{{i18n:strawberry_vape_juice_pod.name}}"
       }
     },
     {

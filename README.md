@@ -8,8 +8,8 @@
 
 <img src="assets/objects.png" width="512" alt="Spriteman seeds, produce, artisan goods, paper, cigarette, and vape sprites" />
 
-![Content Pack](https://img.shields.io/badge/content_pack-v1.3.0-4f8a4c)
-![Smoking Mod](https://img.shields.io/badge/smoking_mod-v1.1.0-b55d4c)
+![Content Pack](https://img.shields.io/badge/content_pack-v1.4.0-4f8a4c)
+![Smoking Mod](https://img.shields.io/badge/smoking_mod-v1.2.1-b55d4c)
 ![Stardew Valley](https://img.shields.io/badge/Stardew_Valley-1.6%2B-6b8e23)
 ![SMAPI](https://img.shields.io/badge/SMAPI-4.0.0%2B-d97b29)
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue)
@@ -25,6 +25,8 @@ Spriteman adds a complete farm-to-craft loop: grow betel nut and tobacco, use a 
 - A craftable Paper Press that turns Fiber and Sap into Paper.
 - A Paper + Dried Tobacco cigarette recipe.
 - Vape Juice Pod and E-Cigarette recipes that use native Truffle Oil and Battery Packs.
+- Apple, Blueberry, Melon, and Strawberry refill pods with distinct temporary buffs.
+- Non-stackable E-Cigarettes, so every device keeps its loaded flavor and remaining uses independently.
 - A custom smoking animation with sound, smoke puffs, energy recovery, a health cost, and a temporary buff for Cigarettes and E-Cigarettes.
 - English and Simplified Chinese localization files.
 
@@ -104,6 +106,10 @@ Mods/
 | Cigarette | 1 Paper + 1 Dried Tobacco | 1 Cigarette |
 | Vape Juice Pod | 1 Fresh Tobacco + 1 Truffle Oil (`432`) | 1 Vape Juice Pod |
 | E-Cigarette | 1 Vape Juice Pod + 1 Battery Pack (`787`) | 1 E-Cigarette |
+| Apple Vape Juice Pod | 1 Vape Juice Pod + 1 Apple (`613`) | 1 Apple Vape Juice Pod |
+| Blueberry Vape Juice Pod | 1 Vape Juice Pod + 1 Blueberry (`258`) | 1 Blueberry Vape Juice Pod |
+| Melon Vape Juice Pod | 1 Vape Juice Pod + 1 Melon (`254`) | 1 Melon Vape Juice Pod |
+| Strawberry Vape Juice Pod | 1 Vape Juice Pod + 1 Strawberry (`400`) | 1 Strawberry Vape Juice Pod |
 
 All crafting recipes in the table are registered as default recipes by the content pack.
 
@@ -118,7 +124,11 @@ All crafting recipes in the table are registered as default recipes by the conte
 | Paper | `20g` | Not edible; used to craft Cigarettes |
 | Cigarette | `250g` | Consumed by the custom smoking action |
 | Vape Juice Pod | `350g` | Not edible; used to assemble E-Cigarettes |
-| E-Cigarette | `650g` | Not edible; load a Vape Juice Pod for 20 uses |
+| E-Cigarette | `650g` | Non-stackable; load a Vape Juice Pod for 20 uses |
+| Apple Vape Juice Pod | `450g` | 20 vape uses; `+1 Farming` and `+1 Speed` |
+| Blueberry Vape Juice Pod | `400g` | 20 vape uses; `+1 Fishing` and `+1 Speed` |
+| Melon Vape Juice Pod | `600g` | 20 vape uses; `+1 Defense` and `+1 Speed` |
+| Strawberry Vape Juice Pod | `470g` | 20 vape uses; `+1 Luck` and `+1 Speed` |
 
 ### Smoking a Cigarette
 
@@ -132,7 +142,7 @@ With a Cigarette selected, press the normal action button while the player is fr
 
 ### Vaping an E-Cigarette
 
-With an E-Cigarette selected, press the normal action button while the player is free. If the rod has no loaded pod, the mod consumes one Vape Juice Pod from the inventory and stores `20` uses in the item's persistent mod data. Press the action button again to vape. Each use replays the same animation and smoke puffs as a Cigarette, costs `2 Health`, restores `50 Energy`, and applies **Light Vape Rush** for `150 seconds`, granting `+1 Mining` and `+1 Speed`. The E-Cigarette rod remains in the inventory when the pod reaches zero uses and can be refilled with another pod.
+With an E-Cigarette selected, press the normal action button while the player is free. If the rod has no loaded pod, the mod consumes the first base or fruit-flavored Vape Juice Pod in the inventory and stores `20` uses plus its flavor in the item's persistent mod data. Press the action button again to vape. Each use replays the same animation and smoke puffs as a Cigarette, costs `2 Health`, restores `50 Energy`, and applies the loaded pod's `150`-second buff. Applying a vape buff replaces any other active Spriteman vape buff. The E-Cigarette rod remains in the inventory when the pod reaches zero uses and can be refilled with another pod.
 ## Project Structure
 
 ```text
