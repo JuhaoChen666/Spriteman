@@ -116,12 +116,10 @@ public sealed class ModEntry : Mod
         player.faceDirection(Game1.down);
         player.CanMove = false;
         player.FarmerSprite.animateOnce(216, 135f, 8);
-
         if (mode == SmokingMode.Cigarette)
             player.reduceActiveItemByOne();
         else
             this.ConsumeVapeUse(vape!);
-
         Game1.playSound("furnace");
     }
 

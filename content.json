@@ -161,6 +161,7 @@
           "Edibility": -300,
           "IsDrink": false
         }
+        }
       }
     },
     {
@@ -188,6 +189,7 @@
             "MiningLevel": 1,
             "Speed": 1
           }
+        }
         }
       }
     },

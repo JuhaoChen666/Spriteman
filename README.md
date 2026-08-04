@@ -133,7 +133,6 @@ With a Cigarette selected, press the normal action button while the player is fr
 ### Vaping an E-Cigarette
 
 With an E-Cigarette selected, press the normal action button while the player is free. If the rod has no loaded pod, the mod consumes one Vape Juice Pod from the inventory and stores `20` uses in the item's persistent mod data. Press the action button again to vape. Each use replays the same animation and smoke puffs as a Cigarette, costs `2 Health`, restores `50 Energy`, and applies **Light Vape Rush** for `150 seconds`, granting `+1 Mining` and `+1 Speed`. The E-Cigarette rod remains in the inventory when the pod reaches zero uses and can be refilled with another pod.
-
 ## Project Structure
 
 ```text
