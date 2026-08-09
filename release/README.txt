@@ -19,13 +19,14 @@ Console Commands 和 Save Backup 不是 Spriteman 的运行前提，只是可选
 ------------
 
 1. 关闭 Stardew Valley 和 SMAPI。
-2. 打开本压缩包，将其中的全部内容解压到 Stardew Valley 的 Mods 文件夹，
-   不是解压到 Mods 文件夹的上一层。
-3. Windows 默认路径示例：
+2. 打开本压缩包，将其中的全部内容解压到 Stardew Valley 安装目录下的
+   `Mods` 文件夹，不要解压到 `Mods` 文件夹的上一层。
+3. Windows 下，以游戏安装目录为基准，目标路径就是：
 
-   E:\Steam\steamapps\common\Stardew Valley\Mods\
+   .\Stardew Valley\Mods\
 
-   如果你的游戏安装在其他盘符，请使用自己的 Stardew Valley\Mods 路径。
+   也就是说，先找到包含 `StardewValley.exe` 的游戏目录，再打开其中的
+   `Mods` 文件夹。无论游戏安装在哪个盘符，都使用这个相对位置即可。
 4. 通过 SMAPI 启动游戏。
 
 安装完成后，文件夹结构应为：
