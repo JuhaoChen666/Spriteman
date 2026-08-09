@@ -23,7 +23,7 @@ Console Commands 和 Save Backup 不是 Spriteman 的运行前提，只是可选
    `Mods` 文件夹，不要解压到 `Mods` 文件夹的上一层。
 3. Windows 下，以游戏安装目录为基准，目标路径就是：
 
-   .\Mods\
+   .\Stardew Valley\Mods\
 
    也就是说，先找到包含 `StardewValley.exe` 的游戏目录，再打开其中的
    `Mods` 文件夹。无论游戏安装在哪个盘符，都使用这个相对位置即可。
