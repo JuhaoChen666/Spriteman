@@ -39,6 +39,35 @@ Spriteman adds a complete farm-to-craft loop: grow betel nut and tobacco, use a 
 | Content Patcher | No minimum version declared | Loads the crops, objects, recipes, shops, and machines |
 | .NET SDK | 6.0 | Needed only when building the smoking module from source |
 
+## Prebuilt Release
+
+The ready-to-play package is available at [`release/Spriteman-v1.4.0.zip`](release/Spriteman-v1.4.0.zip). It includes the compiled Content Patcher pack and SMAPI module, so end users do not need the .NET SDK.
+
+Required dependencies:
+
+- Stardew Valley 1.6+
+- SMAPI 4.0+
+- Content Patcher (2.9.1 was used for the release verification)
+
+Console Commands and Save Backup are optional tools and are not included in the release package.
+
+To install the release, close the game, extract the entire zip directly into the game's `Mods` folder, and launch Stardew Valley through SMAPI. The final layout should be:
+
+```text
+Mods/
+|-- [CP] Spriteman/
+|   |-- assets/
+|   |-- i18n/
+|   |-- content.json
+|   `-- manifest.json
+`-- [SMAPI] Spriteman Smoking/
+    |-- i18n/
+    |-- manifest.json
+    `-- Spriteman.Smoking.dll
+```
+
+See [`release/README.txt`](release/README.txt) for the complete Chinese installation guide, folder placement rules, testing notes, and uninstall instructions.
+
 ## Installation
 
 The repository contains the content-pack source and smoking-module source. To install the current code directly:
